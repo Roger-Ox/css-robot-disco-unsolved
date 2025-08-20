@@ -1,0 +1,189 @@
+/** @format */
+
+@keyframes noseSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-nose:hover {
+  animation: noseSpin 1s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.robot-tooth1,
+.robot-tooth4 {
+  animation: fadeInOut 3s infinite;
+}
+
+.robot-tooth2,
+.robot-tooth5 {
+  animation: fadeInOut 3s infinite 1s;
+}
+
+.robot-tooth3,
+.robot-tooth6 {
+  animation: fadeInOut 3s infinite 2s;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.robot-eye-left {
+  animation: scaleUp 2s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+    background-color: red;
+  }
+  25% {
+    transform: translate(50px, 0px);
+    background-color: orange;
+  }
+  50% {
+    transform: translate(50px, 50px);
+    background-color: yellow;
+  }
+  75% {
+    transform: translate(0px, 50px);
+    background-color: green;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    background-color: blue;
+  }
+}
+
+.robot-eye-right {
+  animation: move 3s infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(75px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.robot-ear-left {
+  animation: moveUp 3s infinite;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-75px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.robot-ear-right {
+  animation: moveDown 3s infinite;
+}
+
+@keyframes spinny1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinny2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes spinny3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
+
+.robot-hair-one {
+  animation: spinny1 3s infinite;
+}
+
+.robot-hair-two {
+  animation: spinny2 3s infinite;
+}
+
+.robot-hair-three {
+  animation: spinny3 3s infinite;
+}
+
+@keyframes lipstick {
+  0% {
+    background-color: red;
+  }
+  16% {
+    background-color: orange;
+  }
+  32% {
+    background-color: yellow;
+  }
+  48% {
+    background-color: green;
+  }
+  64% {
+    background-color: blue;
+  }
+  80% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.robot-teeth {
+  animation: lipstick 3s infinite linear;
+}
